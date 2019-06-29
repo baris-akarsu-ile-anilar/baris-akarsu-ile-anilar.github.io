@@ -29,9 +29,11 @@
             v-for="(song, index) in selectedAlbüm.songs"
             :key="song.fileName">
             <audio-player
+              class="customplayer"
               @audioplay="playSong(index)"
               @finishPlayer="setNextSong"
               ref="audioPayer"
+              :class="{ 'playing': songIndex === index }"
               @playSong="songIndex = index"
               :fileName="song.fileName"
               :songName="song.name"
@@ -59,7 +61,7 @@ export default {
         ...songs
       },
       selectedAlbüm: {},
-      songIndex: 0,
+      songIndex: null,
       togglePlayer: false
     }
   },
@@ -72,10 +74,11 @@ export default {
     setAlbum(albüm) {
       this.selectedAlbüm = albüm
       this.togglePlayer= false
-      this.songIndex = 0
+      this.songIndex = null
     },
     allSongPlay() {
       this.togglePlayer = !this.togglePlayer
+      this.songIndex = 0
       this.$refs.audioPayer[this.songIndex].playSong()
       if (!this.togglePlayer) {
         this.$refs.audioPayer.forEach(audio => {
@@ -101,9 +104,17 @@ export default {
 }
 </script>
 
+<style lang="scss">
+  .customplayer {
+    &.playing {
+      .songName {
+        color: $green;
+      }
+    }
+  }
+</style>
 
 <style lang="scss" scoped>
-
   .playerAlbum {
     width: 100%;
     padding: 10px;
