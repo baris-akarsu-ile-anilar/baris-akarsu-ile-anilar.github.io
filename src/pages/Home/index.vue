@@ -37,14 +37,16 @@
         left:0;
         bottom: 0;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 40px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         height: 100%;
         background: rgba(#000, .2);
-        padding: 50px;
+        padding: 20px 60px;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
       }
       &-photo {
         height: inherit;
@@ -86,6 +88,10 @@
       
       .baris-akarsu {
         height: initial;
+        .message {
+          font-size: 22px;
+          padding: 10px;
+        }
         &-photo {
          object-fit: contain;
          width: 100%;
