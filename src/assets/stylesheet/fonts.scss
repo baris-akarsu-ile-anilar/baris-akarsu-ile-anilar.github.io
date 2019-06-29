@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Indie Flower';
+  src: url('/fonts/IndieFlower/IndieFlower.ttf') format('TrueType')
+}
