@@ -1,6 +1,9 @@
 <template>
   <section class="Home">
     <div class="baris-akarsu">
+      <div class="message">
+        <p> Seni Her Zaman Bıraktığın Güzellikle Anacağız ...</p>
+      </div>
       <img src="https://pbs.twimg.com/profile_images/880574590619144192/b_CX7MUv.jpg" class="baris-akarsu-photo" alt="Barış Akarsu">
     </div>
     <div class="menu">
@@ -27,6 +30,22 @@
 
     .baris-akarsu {
       height: 100vh;
+      position: relative;
+      .message {
+        position: absolute;
+        z-index: 999;
+        left:0;
+        bottom: 0;
+        font-weight: bold;
+        font-size: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+        background: rgba(#000, .2);
+        padding: 50px;
+      }
       &-photo {
         height: inherit;
         max-width: 100%;
