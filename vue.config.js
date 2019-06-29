@@ -1,4 +1,5 @@
 module.exports = {
+  assetsDir: "./dist",
   css: {
     loaderOptions: {
       sass: {
