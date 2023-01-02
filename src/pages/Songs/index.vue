@@ -5,13 +5,13 @@
       <div class="albums">
         <h2 class="title">Albümler</h2>
         <div class="albums-item"
-        :class="{ 'isSelected' : selectedAlbüm === albüm }"
-        v-for="albüm in albüms"
-        :key="albüm.albümName">
+        :class="{ 'isSelected' : selectedAlbum === album }"
+        v-for="album in albums"
+        :key="album.albumName">
 
-          <button @click="setAlbum(albüm)">
-            <img :src="albüm.albümPhoto" :alt="albüm.albümName" class="albümPhoto">
-            <span> {{ albüm.albümName }} </span>
+          <button @click="setAlbum(album)">
+            <img :src="album.albumPhoto" :alt="album.albumName" class="albumPhoto">
+            <span> {{ album.albumName }} </span>
           </button>
 
         </div>
@@ -24,9 +24,9 @@
           <span v-if="togglePlayer">Durdur</span>
           <span v-else>Listeyi Çal</span>
         </button>
-        <div class="selectedAlbüm">
+        <div class="selectedAlbum">
           <div class="song"
-            v-for="(song, index) in selectedAlbüm.songs"
+            v-for="(song, index) in selectedAlbum.songs"
             :key="song.fileName">
             <audio-player
               class="customplayer"
@@ -57,10 +57,10 @@ export default {
 
   data() {
     return {
-      albüms: {
+      albums: {
         ...songs
       },
-      selectedAlbüm: {},
+      selectedAlbum: {},
       songIndex: null,
       togglePlayer: false
     }
@@ -71,8 +71,8 @@ export default {
   },
 
   methods: {
-    setAlbum(albüm) {
-      this.selectedAlbüm = albüm
+    setAlbum(album) {
+      this.selectedAlbum = album
       this.togglePlayer= false
       this.songIndex = null
     },
@@ -99,7 +99,7 @@ export default {
     }
   },
   beforeMount() {
-    this.selectedAlbüm = this.albüms[0]
+    this.selectedAlbum = this.albums[0]
   }
 }
 </script>
@@ -179,7 +179,7 @@ export default {
             height: inherit;
             padding: 20px;
             
-            .albümPhoto {
+            .albumPhoto {
               max-width: 200px;
               margin-bottom: 10px;
             }
@@ -195,7 +195,7 @@ export default {
         flex: 1;
         margin-left: 25%;
 
-        .selectedAlbüm {
+        .selectedAlbum {
           img {
             max-width: 200px;
             max-height: 200px;
@@ -263,7 +263,7 @@ export default {
             padding-right: 15px;
             display: flex;
 
-            .albümPhoto {
+            .albumPhoto {
               max-width: 170px !important;
             }
           }
