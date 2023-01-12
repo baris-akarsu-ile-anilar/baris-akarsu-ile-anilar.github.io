@@ -4,7 +4,7 @@
       <div class="message">
         <p> Seni Her Zaman Bıraktığın Güzellikle Anacağız ...</p>
       </div>
-      <img src="https://pbs.twimg.com/profile_images/880574590619144192/b_CX7MUv.jpg" class="baris-akarsu-photo" alt="Barış Akarsu">
+      <img src="/pictures/kapak.webp" class="baris-akarsu-photo" alt="Barış Akarsu">
     </div>
     <div class="menu">
       <routerLink class="menu-item" :to="{ name: 'Songs' }">

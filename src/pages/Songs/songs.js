@@ -1,7 +1,7 @@
 export const songs = [
   {
-    albümName: "Islak Islak",
-    albümPhoto: "https://www.esenshop.com/Uploads/UrunResimleri/Baris-Akarsu---Islak-Islak-bd05.jpg",
+    albumName: "Islak Islak",
+    albumPhoto: "/pictures/8697415715869-baris-akarsu-islak-islak-b-9f70.jpg",
     relaseDate: "Ocak 2005",
     songs: [
       {
@@ -47,9 +47,9 @@ export const songs = [
     ]
   },
   {
-    albümName: "Düşmeden Bulutlarda Koşmam Gerek",
+    albumName: "Düşmeden Bulutlarda Koşmam Gerek",
     relaseDate: "Ağustos 2006",
-    albümPhoto: "https://www.esenshop.com/Uploads/UrunResimleri/Baris-Akarsu---Dusmeden-Bulutlarda-Kosma-4d0b.jpg",
+    albumPhoto: "/pictures/8697415716613-baris-akarsu-dusmeden-bu-45f2-b.jpg",
     songs: [
       {
         name: "Vurdum En Dibe Kadar",
@@ -98,13 +98,13 @@ export const songs = [
       {
         name: "Ben (Akustik Versiyon)",
         fileName: "ben_akustik"
-      },
+      }
     ]
   },
   {
-    albümName: "Ayrılık Zamansız Gelir",
+    albumName: "Ayrılık Zamansız Gelir",
     relaseDate: "Ocak 2008",
-    albümPhoto: "https://www.esenshop.com/Uploads/UrunResimleri/Baris-Akarsu---Ayrilik-Zamansiz-Gelir-Al-77c0.jpg",
+    albumPhoto: "/pictures/8697415712486-baris-akarsu-ayrilik-zam-c-1ffa.jpg",
     songs: [
       {
         name: "Resimdeki Gözyaşları",

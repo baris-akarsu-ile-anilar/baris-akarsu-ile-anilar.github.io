@@ -1,5 +1,10 @@
 # baris-akarsu-ile-anilar
 
+## Todos
+- [ ] "Fotoğraflar" page created.
+- [ ] "Videolar" page created. (use Youtube)
+- [ ] Archive.org Saved. [Archive.org Web](https://web.archive.org/save)
+
 ## Project setup
 ```
 yarn install
